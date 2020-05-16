@@ -1,59 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./src/main.css" />
-    <title>Gama Academy - Calculadora de churrasco</title>
-  </head>
-  <body>
-    <header>
-      <h5>GAMA ACADEMY</h5>
-      <h2>Calculadora de Churrasco</h2>
-    </header>
 
-    <div>
-      <label for="mulheres-qnt">Mulheres</label>
-      <input id="mulheres-qnt" type="text" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="./src/main.css" />
+  <title>Gama Academy - Calculadora de churrasco</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
 
-      <label for="homens-qnt">Homens</label>
-      <input id="homens-qnt" type="text" />
+<body style="background-color: #731AB7;">
+  <header>
+    <h5>GAMA ACADEMY</h5>
+    <h2>Calculadora de Churrasco</h2>
+  </header>
 
-      <label for="criancas-qnt">Crianças</label>
-      <input id="criancas-qnt" type="text" />
+  <div class="container-md">
+    <h3 class="titulo_h3">Comidas</h3>
+    <div class="row">
+      <div class="col-4">
+        <label class="label_titulo" for="mulheres-qnt">Mulheres</label>
+        <input class="input_campos" id="mulheres-qnt" type="text" />
+      </div>
+
+      <div class="col-4">
+        <label class="label_titulo" for="homens-qnt">Homens</label>
+        <input class="input_campos" id="homens-qnt" type="text" />
+      </div>
+
+      <div class="col-4">
+        <label class="label_titulo" for="criancas-qnt">Crianças</label>
+        <input class="input_campos" id="criancas-qnt" type="text" />
+      </div>
+
       <br>
-      <label for="acompanhamentos">acompanhamentos</label>
-      <input id="acompanhamentos" type="checkbox" />
-    </div>
-    <div>
-      <label for="bebidas-alcoolicas">Bebidas alcoolicas</label>
-      <input id="bebidas-alcoolicas" type="text" />
-
-      <label for="bebidas-nao-alcoolicas">Bebidas não alcoolicas</label>
-      <input id="bebidas-nao-alcoolicas" type="text" />
-    </div>
-    <br>
-    <button id="botaoCalcular">Calcular</button>
-
       <div>
-        <div>
-          <label for="total-carne" id="total-carne"></label>
-        </div>
-        <div>
-          <label for="total-pessoas" id="total-pessoas"></label>
-        </div>
-        <div>
-          <label for="total-acompanhamento" id="total-acompanhamento"></label>
-        </div>
-        <div>
-          <label for="total-bebidas-nao-alcoolicas" id="total-bebidas-nao-alcoolicas"></label>
-        </div>
-        <div>
-          <label for="total-bebidas-alcoolicas" id="total-bebidas-alcoolicas"></label>
-        </div>
-        <div>
+        <label class="label_acom" for="acompanhamentos">acompanhamentos</label>
+        <input class="input_acom" id="acompanhamentos" type="checkbox" />
       </div>
     </div>
-    <script src="./src/main.js"></script>
-  </body>
+  </div>
+
+  <div class="container-md">
+    <h3 class="titulo_h3">Bebidas</h3>
+    <div class="row">
+      <div class="col-3">
+        <label class="label_titulo" for="bebidas-alcoolicas">Bebidas alcoolicas</label>
+        <input class="input_campos" id="bebidas-alcoolicas" type="text" />
+      </div>
+      <div class="col-3">
+        <label class="label_titulo" for="bebidas-nao-alcoolicas">Bebidas não alcoolicas</label>
+        <input class="input_campos" id="bebidas-nao-alcoolicas" type="text" />
+      </div>
+    </div>
+  </div>
+  <br>
+  <button class="botaoCalcular" id="botaoCalcular">Calcular</button>
+
+  <div>
+    <div>
+      <label for="total-carne" id="total-carne"></label>
+    </div>
+    <div>
+      <label for="total-pessoas" id="total-pessoas"></label>
+    </div>
+    <div>
+      <label for="total-acompanhamento" id="total-acompanhamento"></label>
+    </div>
+    <div>
+      <label for="total-bebidas-nao-alcoolicas" id="total-bebidas-nao-alcoolicas"></label>
+    </div>
+    <div>
+      <label for="total-bebidas-alcoolicas" id="total-bebidas-alcoolicas"></label>
+    </div>
+    <div>
+    </div>
+  </div>
+  <script src="./src/main.js"></script>
+</body>
+
 </html>
